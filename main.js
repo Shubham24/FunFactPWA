@@ -2,7 +2,7 @@
 var myApi = [];
 async function getFact()
 {
-	var backgroundColor = ['#484D6D', '#EE6352', '#2E2D4D', '#0A1128', "#001F54", "#034078", "#312F2F", "#22181C"];
+	var backgroundColor = ["Tomato", "Teal", "SteelBlue", "SlateGrey", "SlateBlue", "Sienna", "SeaGreen", "SaddleBrown", "RoyalBlue", "Red", "RebeccaPurple", "Purple", "Peru", "PaleVioletRed", "OrangeRed", "OliveDrab", "Olive", "Navy", "MidnightBlue", "MediumVioletRed", "MediumSlateBlue", "MediumSeaGreen", "MediumPurple", "MediumOrchid", "MediumBlue", "Maroon", "Magenta", "LimeGreen", "Lime", "LightSlateGrey", "LightSeaGreen", "Indigo", "IndianRed", "Green", "Grey", "Fuchsia", "ForrestGreen", "FireBrick", "DodgerBlue", "DimGrey", "DeepSkyBlue", "DeepPink", "DarkViolet", "DarkTurquoise", "DarkSlateGrey", "DarkSlateBlue", "DarkRed", "DarkOrchid", "DarkOliveGreen", "DarkMagenta", "DarkGreen", "DarkGoldenRod", "DarkCyan", "DarkBlue", "Crimson", "CornflowerBlue", "Chocolate", "CadetBlue", "Brown", "BlueViolet", "Blue", "Black"];
 	console.log(backgroundColor[Math.floor(Math.random() * backgroundColor.length)]);
 	document.body.style.background = backgroundColor[Math.floor(Math.random() * backgroundColor.length)];
 	var randomNumber = Math.floor(Math.random() * 3);
