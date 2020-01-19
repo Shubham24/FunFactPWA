@@ -10,7 +10,7 @@ async function getFact()
 	if(rand === 1)
 	{
 		document.body.style.background = backgroundColorDark[Math.floor(Math.random() * backgroundColorDark.length)];
-		document.getElementById("f").style.color == "white";
+		document.getElementById("f").style.color == "#FFF";
 	}
 	else
 	{
