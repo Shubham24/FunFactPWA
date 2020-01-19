@@ -8,6 +8,15 @@
  		<meta name="keywords" content="facts, random facts, fun facts, random fun facts">
   		<meta name="author" content="Shubham Sinha">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+			// Check that service workers are supported
+			if ('serviceWorker' in navigator) {
+  				// Use the window load event to keep the page load performant
+  				window.addEventListener('load', () => {
+	    				navigator.serviceWorker.register('/service-worker.js');
+  				});
+			}
+		</script>
 	</head>
 	<body onclick = getFact()>
 		<h1 id="f">Click the screen for Random Facts!</h1>
