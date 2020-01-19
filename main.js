@@ -1,4 +1,4 @@
-
+document.getElementById("f").color = "white";
 var myApi = [];
 async function getFact()
 {
