@@ -6,12 +6,10 @@
 	"display" : "standalone",
 	"start_url" : "https://shubham24.github.io/FunFactsPWA/",
 	"short_name" : "Fun Fact:",
-	"theme_color" : "transparent",
+	"theme_color" : "#011638",
 	"description" : "Random Fun Facts",
 	"orientation" : "any",
-	"background_color" : "transparent",
-	"related_applications" : "",
-	"prefer_related_applications" : "false",
+	"background_color" : "#011638",
 	"icons" : [
 		{
 			"src": "1f914.png",
