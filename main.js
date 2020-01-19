@@ -14,7 +14,7 @@ async function getFact()
 	else
 	{
 		document.body.style.background = backgroundColorLight[Math.floor(Math.random() * backgroundColorLight.length)];
-		document.getElementById('f').style.color == "#1F2D3D";
+		document.h1.style.color == "#1F2D3D";
 	}
 	var randomNumber = Math.floor(Math.random() * 3);
 	if (randomNumber === 1)
