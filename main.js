@@ -10,12 +10,12 @@ async function getFact()
 	if(rand === 1)
 	{
 		document.body.style.background = backgroundColorDark[Math.floor(Math.random() * backgroundColorDark.length)];
-		document.getElementById("f").style.color == "#FFF";
+		document.getElementById("f").style.color = "#FFF";
 	}
 	else
 	{
 		document.body.style.background = backgroundColorLight[Math.floor(Math.random() * backgroundColorLight.length)];
-		document.getElementById("f").style.color == "#1F2D3D";
+		document.getElementById("f").style.color = "#1F2D3D";
 	}
 	var randomNumber = Math.floor(Math.random() * 3);
 	if (randomNumber === 1)
