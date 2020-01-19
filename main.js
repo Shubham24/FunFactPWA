@@ -4,7 +4,7 @@ async function getFact()
 {
 	
 	var backgroundColorDark = ["Tomato", "Teal", "SteelBlue", "SlateGrey", "SlateBlue", "Sienna", "SeaGreen", "SaddleBrown", "RoyalBlue", "Red", "RebeccaPurple", "Purple", "Peru", "PaleVioletRed", "OrangeRed", "OliveDrab", "Olive", "Navy", "MidnightBlue", "MediumVioletRed", "MediumSlateBlue", "MediumSeaGreen", "MediumPurple", "MediumOrchid", "MediumBlue", "Maroon", "Magenta", "LightSlateGrey", "LightSeaGreen", "Indigo", "IndianRed", "Green", "Grey", "Fuchsia", "ForrestGreen", "FireBrick", "DodgerBlue", "DimGrey", "DeepSkyBlue", "DeepPink", "DarkViolet", "DarkTurquoise", "DarkSlateGrey", "DarkSlateBlue", "DarkRed", "DarkOrchid", "DarkOliveGreen", "DarkMagenta", "DarkGreen", "DarkGoldenRod", "DarkCyan", "DarkBlue", "Crimson", "CornflowerBlue", "Chocolate", "CadetBlue", "Brown", "BlueViolet", "Blue", "Black"];
-	var backGroundColorLight = ["AliceBlue", "AntiqueWhite", "Aqua", "AquaMarine", "Azure", "Beige", "Bisque", "BlanchedAlmond", "BurlyWood", "Chartreuse", "Coral", "Cornsilk", "Cyan", "DarkGrey", "DarkKhaki", "DarkOrange", "DarkSalmon", "DarkSeaGreen", "FloralWhite", "Gainsboro", "GhostWhite", "Gold", "GoldenRod", "GreenYellow", "HoneyDew", "HotPink", "Ivory", "Khaki", "Lavender", "LavenderBlush", "LawnGreen", "LemonChiffon", "LightBlue", "LightCoral", "LightCyan", "LightGoldenRodYellow", "LightGrey", "LightGreen", "LightPink", "LightSalmon", "LightSkyBlue", "LightSteelBlue", "LightYellow", "Lime", "LimeGreen", "Linen", "Magenta", "MediumAquaMarine", "MediumSpringGreen", "MediumTurquoise", "MintCream", "MistyRose", "Moccasin", "NavajoWhite", "OldLace", "Orange", "Orchid", "PaleGoldenRod", "PaleGreen", "PaleTurqoise", "PapayaWhip", "PeachPuff", "Pink", "Plum", "PowerBlue", "RosyBrown", "Salmon", "SandyBrown", "SeaShell", "Silver", "SkyBlue", "Snow", "SpringGreen", "Tan", "Thisle", "Turquoise", "Violet", "Wheat", "WhiteSmoke", "Yellow", "YellowGreen"];
+	var backgroundColorLight = ["AliceBlue", "AntiqueWhite", "Aqua", "AquaMarine", "Azure", "Beige", "Bisque", "BlanchedAlmond", "BurlyWood", "Chartreuse", "Coral", "Cornsilk", "Cyan", "DarkGrey", "DarkKhaki", "DarkOrange", "DarkSalmon", "DarkSeaGreen", "FloralWhite", "Gainsboro", "GhostWhite", "Gold", "GoldenRod", "GreenYellow", "HoneyDew", "HotPink", "Ivory", "Khaki", "Lavender", "LavenderBlush", "LawnGreen", "LemonChiffon", "LightBlue", "LightCoral", "LightCyan", "LightGoldenRodYellow", "LightGrey", "LightGreen", "LightPink", "LightSalmon", "LightSkyBlue", "LightSteelBlue", "LightYellow", "Lime", "LimeGreen", "Linen", "Magenta", "MediumAquaMarine", "MediumSpringGreen", "MediumTurquoise", "MintCream", "MistyRose", "Moccasin", "NavajoWhite", "OldLace", "Orange", "Orchid", "PaleGoldenRod", "PaleGreen", "PaleTurqoise", "PapayaWhip", "PeachPuff", "Pink", "Plum", "PowerBlue", "RosyBrown", "Salmon", "SandyBrown", "SeaShell", "Silver", "SkyBlue", "Snow", "SpringGreen", "Tan", "Thisle", "Turquoise", "Violet", "Wheat", "WhiteSmoke", "Yellow", "YellowGreen"];
 	let rand = Math.floor(Math.random() * 2);
 	if(rand === 1)
 	{
@@ -21,7 +21,6 @@ async function getFact()
 		let url = 'https://uselessfacts.jsph.pl/random.json?language=en';
 		let response = await fetch(url);
 		let commits = await response.json(); // read response body and parse as JSON
-		console.log('From Useless Facts Api');
 		fact = commits.text;
 	}
 	
@@ -35,7 +34,6 @@ async function getFact()
 		}
 		
 		let rn = Math.floor(Math.random() * myApi.length);
-		console.log("From Shubham's Api");
 		fact = myApi[rn].content.$t;
 	}
 	
