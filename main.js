@@ -9,11 +9,11 @@ async function getFact()
 	console.log(rand);
 	if(rand === 1)
 	{
-		document.body.style.background = backgroundColorDark[Math.floor(Math.random() * backgroundColor.length)];
+		document.body.style.background = backgroundColorDark[Math.floor(Math.random() * backgroundColorDark.length)];
 	}
 	else
 	{
-		document.body.style.background = backgroundColorLight[Math.floor(Math.random() * backgroundColor.length)];
+		document.body.style.background = backgroundColorLight[Math.floor(Math.random() * backgroundColorLight.length)];
 		document.getElementById('f').style.color == "#1F2D3D";
 	}
 	var randomNumber = Math.floor(Math.random() * 3);
