@@ -1,0 +1,16 @@
+body{
+
+background-color: #333;
+
+}
+
+#f{
+	color: white;
+	height: 90%; 
+    	width:100%;
+    	display:flex;
+    	align-items: center;
+    	justify-content: center;
+	text-align: center;
+ 
+}
