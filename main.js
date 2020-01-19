@@ -6,13 +6,7 @@ async function getFact()
 	console.log(backgroundColor[Math.floor(Math.random() * backgroundColor.length)]);
 	document.body.style.background = backgroundColor[Math.floor(Math.random() * backgroundColor.length)];
 	var randomNumber = Math.floor(Math.random() * 3);
-	if(randomNumber === 0)
-	{
-		let response = await fetch('http://numbersapi.com/random/');
-		console.log('From Numbers Api');
-		var fact = await response.text(); // read response body as text
-	}
-	else if (randomNumber === 1)
+	if (randomNumber === 1)
 	{
 		let url = 'https://uselessfacts.jsph.pl/random.json?language=en';
 		let response = await fetch(url);
