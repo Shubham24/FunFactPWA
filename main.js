@@ -29,7 +29,7 @@ async function getFact()
 			myApiTwo = commits.feed.entry;
 		}
 		
-		let rn = Math.floor(Math.random() * myApi.length);
+		let rn = Math.floor(Math.random() * myApiTwo.length);
 		fact = myApiTwo[rn].content.$t;
 	}
 	
