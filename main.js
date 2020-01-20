@@ -18,7 +18,7 @@ async function getFact()
 		document.getElementById("f").style.color = "#1F2D3D";
 	}
 	var randomNumber = Math.floor(Math.random() * 100);
-	if (randomNumber <= 6)
+	if (randomNumber <= 33)
 	{
 		let url = 'https://uselessfacts.jsph.pl/random.json?language=en';
 		let response = await fetch(url);
