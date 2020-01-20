@@ -1,5 +1,6 @@
 document.getElementById("f").style.color = "white";
 var myApi = [];
+var myApiTwo = [];
 async function getFact()
 {
 	
@@ -18,12 +19,18 @@ async function getFact()
 		document.getElementById("f").style.color = "#1F2D3D";
 	}
 	var randomNumber = Math.floor(Math.random() * 100);
-	if (randomNumber <= -1)
+	if (randomNumber <= 10)
 	{
-		let url = 'https://uselessfacts.jsph.pl/random.json?language=en';
-		let response = await fetch(url);
-		let commits = await response.json(); // read response body and parse as JSON
-		fact = commits.text;
+		if(myApiTwo.length === 0)
+		{
+			let url = 'https://spreadsheets.google.com/feeds/cells/1vodJCRqCL2t_C7QZeoTLjgzEwPhEMIR34eUpG4Qbqz8/2/public/full?alt=json'
+			let response = await fetch(url);
+			let commits = await response.json(); // read response body and parse as JSON
+			myApiTwo = commits.feed.entry;
+		}
+		
+		let rn = Math.floor(Math.random() * myApi.length);
+		fact = myApiTwo[rn].content.$t;
 	}
 	
 	else{
