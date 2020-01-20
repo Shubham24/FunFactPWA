@@ -17,8 +17,8 @@ async function getFact()
 		document.body.style.background = backgroundColorLight[Math.floor(Math.random() * backgroundColorLight.length)];
 		document.getElementById("f").style.color = "#1F2D3D";
 	}
-	var randomNumber = Math.floor(Math.random() * 3);
-	if (randomNumber === 1)
+	var randomNumber = Math.floor(Math.random() * 100);
+	if (randomNumber <= 5)
 	{
 		let url = 'https://uselessfacts.jsph.pl/random.json?language=en';
 		let response = await fetch(url);
