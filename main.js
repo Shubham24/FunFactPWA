@@ -1,8 +1,8 @@
 document.getElementById("f").style.color = "white";
 var myApi = [];
 var myApiTwo = [];
-var MagicMint = "#ABEBD2";
-var LapisLazuli = "#2660A4";
+var MagicMint = "rgb(171, 235, 210)";
+var LapisLazuli = "rgb(38, 96, 164)";
 async function getFact()
 {
 	
