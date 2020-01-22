@@ -53,7 +53,7 @@ async function getFact()
 		
 		let rn = Math.floor(Math.random() * myApi.length);
 		
-		if(document.body.background === LapisLazuli && Math.floor(Math.random() * 1000) === 24 && rn === 24)
+		if(document.body.style.background === LapisLazuli && Math.floor(Math.random() * 1000) === 24 && rn === 24)
 		{
 			fact = "🎉 Congratulations! This is the hardest Easter Egg to find!🎉";
 		}
